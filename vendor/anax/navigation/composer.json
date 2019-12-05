@@ -1,0 +1,29 @@
+{
+    "name" : "anax/navigation",
+    "description": "Anax Navigation module, for menus, navbars and navigation.",
+    "homepage": "https://github.com/canax/navigation",
+    "license": "MIT",
+    "keywords": ["Anax", "Framework"],
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/navigation/issues",
+        "source": "https://github.com/canax/navigation"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "anax/commons": "^2.0.0@beta"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "anax/page",
+    "type": "library",
+    "description": "Anax Page module, wrapper to ease create web pages.",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/page/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "anax/commons": "^2.0.0@alpha"
+    },
+    "require-dev": {
+        "anax/configure": "^2.0.0@alpha",
+        "anax/di": "^2.0.0@alpha",
+        "anax/response": "^2.0.0@alpha",
+        "anax/request": "^2.0.0@alpha",
+        "anax/view": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}

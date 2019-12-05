@@ -1,0 +1,40 @@
+{
+    "name": "anax/textfilter",
+    "type": "library",
+    "description": "Anax TextFilter module, frontmatter, shortcodes, markdown.",
+    "keywords": ["anax", "textprocessing", "frontmatter", "shortcodes", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se",
+            "homepage": "https://dbwebb.se",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/textfilter/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "ezyang/htmlpurifier": "^4.0",
+        "michelf/php-markdown": "^1.6",
+        "michelf/php-smartypants": "^1.6",
+        "scrivo/highlight.php": "^9.0"
+    },
+    "require-dev": {
+        "mustangostang/spyc": "^0.6.2",
+        "symfony/yaml": "^3.4",
+        "phpunit/phpunit": "^7"
+    },
+    "suggest": {
+        "ext-json": "*",
+        "ext-yaml": "*"
+    }
+}

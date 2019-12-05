@@ -1,0 +1,17 @@
+version: "3"
+services:
+    latest: &latest
+        image: anax/dev
+        ports:
+            - "8080:80"
+        volumes:
+            - ..:/app
+    php71:
+        <<: *latest
+        image: anax/dev:php71
+    php70:
+        <<: *latest
+        image: anax/dev:php70
+    php56:
+        <<: *latest
+        image: anax/dev:php56

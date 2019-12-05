@@ -1,0 +1,30 @@
+{
+    "name" : "anax/cache",
+    "description": "Anax Cache module, caching like PSR-6/16.",
+    "homepage": "https://github.com/canax/cache",
+    "license": "MIT",
+    "keywords": ["Anax", "Framework"],
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/cache/issues",
+        "source": "https://github.com/canax/cache"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "psr/simple-cache": "^1.0"
+    },
+    "require-dev": {
+        "anax/di": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "anax/content",
+    "type": "library",
+    "description": "Anax Content module, filebased flat file content.",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/content/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "anax/commons": "^2.0.0@alpha",
+        "anax/router": "^2.0.0@alpha"
+    },
+    "require-dev": {
+        "anax/configure": "^2.0.0@alpha",
+        "anax/di": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}

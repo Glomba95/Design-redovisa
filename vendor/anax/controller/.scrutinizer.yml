@@ -1,0 +1,23 @@
+imports:
+    - php
+
+filter:
+    excluded_paths: [vendor/*, test/*]
+
+build:
+
+    # dependencies:
+    #     before:
+    #         -
+    #             command: "mkdir build"
+    #     after:
+    #         - "composer require --dev phpunit/phpunit"
+
+    tests:
+        override:
+            -
+                #command: "vendor/bin/phpunit --configuration .phpunit.xml"
+                command: "make phpunit"
+                coverage:
+                    file: "build/coverage.clover"
+                    format: "php-clover"

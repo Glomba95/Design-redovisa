@@ -1,0 +1,34 @@
+{
+    "name": "anax/view",
+    "type": "library",
+    "description": "Anax View module, collect and render views.",
+    "keywords": ["anax", "template"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/view/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        },
+        "files": [
+            "src/View/ViewHelperFunctions.php"
+        ]
+    },
+    "require": {
+        "php": "^7.2",
+        "anax/commons": "^2.0.0@alpha"
+    },
+    "require-dev": {
+        "anax/configure": "^2.0.0@alpha",
+        "anax/di": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}

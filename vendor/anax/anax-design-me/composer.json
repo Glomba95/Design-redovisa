@@ -1,0 +1,28 @@
+{
+    "name" : "anax/anax-design-me",
+    "description": "A me page for the design course using Anax Flat.",
+    "homepage": "https://github.com/canax/anax-design-me",
+    "license": "MIT",
+    "keywords": ["Anax", "dbwebb", "design"],
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/anax-design-me/issues",
+        "source": "https://github.com/canax/anax-design-me"
+    },
+    "autoload": {
+        "psr-4": {"Anax\\": "src/"}
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "anax/anax-flat": "^1.0.11",
+        "anax/cache": "^2.0.0@beta",
+        "anax/content": "^2.0.0@beta"
+    }
+}

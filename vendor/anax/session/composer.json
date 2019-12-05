@@ -1,0 +1,33 @@
+{
+    "name": "anax/session",    
+    "type": "library",
+    "description": "Anax Session module, a wrapper around sessions.",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/session/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "suggest": {
+        "anax/configure": "^2.0.0@alpha"
+    },
+    "require-dev": {
+        "anax/configure": "^2.0.0@alpha",
+        "anax/di": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}

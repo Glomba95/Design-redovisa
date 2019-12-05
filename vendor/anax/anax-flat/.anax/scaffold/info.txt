@@ -1,0 +1,5 @@
+Create a site using Anax Flat.
+
+Standard installation of Anax Flat (latest version).
+together with some bare essentials which makes up a
+simple website or webservice.

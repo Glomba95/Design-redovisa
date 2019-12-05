@@ -1,0 +1,29 @@
+{
+    "name": "anax/configure",
+    "type": "library",
+    "description": "Anax Configure module, for reading config files.",
+    "keywords": ["boilerplate", "framework", "mvc", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael Roos",
+            "email": "mos@dbwebb.se"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/configure/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "anax/di": "^2.0.0@alpha",
+        "phpunit/phpunit": "^7"
+    }
+}
