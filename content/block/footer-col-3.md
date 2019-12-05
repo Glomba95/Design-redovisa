@@ -1,3 +1,4 @@
-#### Footer col 3
+### Validera
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+
+[CSS Validator](http://jigsaw.w3.org/css-validator/check/referer)av länkar.
