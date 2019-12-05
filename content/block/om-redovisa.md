@@ -1,3 +1,3 @@
-#### Redovisa på GitHub
+#### Om utbildningen
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Du kan läsa mer om kursen på [programmets hemsida](https://www.dbwebb.se "Till BTHs hemsida för webbprogrammering").

@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,19 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
 ---
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Denna sida är en del av kursen Design V2 som ingår webbprogrammeringsprogrammet på BTH.
 
-Skriv några kloka ord om kursen?
+Kursen behandlar huvudsakligen utvecklingen av en hemsidas design, både vad det gäller utseende och användarvänlighet. Detta för att som webbprogrammerare med denna grundläggande kunskap kring webbdesign på ett bättre sätt kunna kommunicera och utföra projekt i samarbete med en webbdesigner.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+
+
+
+[FIGURE src=image/vintage.jpg?w=600 caption="Bird"]
