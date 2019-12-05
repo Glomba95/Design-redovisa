@@ -25,19 +25,23 @@
 }
 
 
+
 /* Container */
 
-html {
-    overflow-y: scroll;
+.wrap-all {
+    background-color: #ccc;
 }
 
 .outer-wrap {
     width: 100%;   /* så vet vi att de alltid sträcker sig över hela sidan */
+    overflow: auto;
+    background-color: teal;
 }
 
 .inner-wrap {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+    background-color: pink;
 }
 
 .row::after {      /* För att cleara headerkolumnerna */
@@ -53,11 +57,13 @@ html {
     float: left;
     width: 30%;
     margin-right: 10px;
+    background-color: green;
 }
 
 .region-header-col-2 {
     float: left;
     width: 60%;
+    background-color: yellow;
 }
 
 .site-logo {
@@ -78,51 +84,27 @@ html {
 
 /* Main */
 
-.outer-wrap-main {
-    min-height: 30em;
-}
-
 .inner-wrap-main {
     padding: 30px 0;
+    background-color: coral;
 }
-
-.inner-wrap-main>.row {
-    display: flex;
-}
-
-.region-main .article {
-    text-align: justify;
-}
-
-.author-byline {
-    border: 1px solid black;
-    width: 650px;
-}
-
-.author-byline img {
-    display: flex;
-    flex-direction: row;
-}
-
 
 
 /* Footer */
 
+.outer-wrap-footer {
+    background-color: Navy;
+    color: white;
+}
+
 .inner-wrap-footer {
-    background-color: PeachPuff;
     padding: 30px 0;
+    background-color: SandyBrown;
 }
 
-.footer-column-wrapper {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.block.site-footer {
-    margin-top: 30px;
+.region-footer .block {
+    padding-top: 30px;
+    width: 100%;
     text-align: center;
+    background-color: red;
 }
