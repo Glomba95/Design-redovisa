@@ -1,17 +1,21 @@
 /*!
- * LESS version of the stylesheet for design kmom01.
- *
- * This stylesheet is for the design course and kmom01. Its intention is to
- * use kmom01.css and lessify the style and use this as a wrapper for the new
- * style.
+ * LESS version of the stylesheet for design kmom02.
+
+ * This stylesheet is for the design course and kmom02 where we use LESS.
  */
 
- /* Poor-mans normalize */
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+ /**
+  * Normalize and reset the style.
+  */
+ @import "normalize.css/normalize.less";
+
+ /**
+  * Font Awesome.
+  */
+ @import "@fortawesome/fontawesome-free/less/fontawesome.less";
+ @import "@fortawesome/fontawesome-free/less/solid.less";
+ @import "@fortawesome/fontawesome-free/less/brands.less";
+
 
 /**
  * Internal self contained modules, save in directory module/.
@@ -24,7 +28,6 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-//@import "base/base_default.less";
 @import "base/base.less";
 
 
@@ -33,9 +36,8 @@
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-//@import "layout/layout_default.less";
-//@import "layout/responsive_default.less";
 @import "layout/layout.less";
+@import "layout/layout_kmom02.less";
 @import "layout/responsive.less";
 @import "layout/regions.less";     // To add style for ?regions
 

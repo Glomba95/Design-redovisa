@@ -5,6 +5,12 @@
  * use kmom01.css and lessify the style and use this as a wrapper for the new
  * style.
  */
+/* Poor-mans normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /**
  * Internal self contained modules, save in directory module/.
  */
@@ -56,12 +62,6 @@ body {
 /**
  * General layout
  */
-/* Poor-mans normalize */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .outer-wrap {
   width: 100%;
   /* så vet vi att de alltid sträcker sig över hela sidan */
