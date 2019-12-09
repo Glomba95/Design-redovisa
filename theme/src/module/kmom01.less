@@ -1,0 +1,128 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+
+
+/* Poor-mans normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container */
+
+html {
+    overflow-y: scroll;
+}
+
+.outer-wrap {
+    width: 100%;   /* så vet vi att de alltid sträcker sig över hela sidan */
+}
+
+.inner-wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row::after {      /* För att cleara headerkolumnerna */
+    overflow: auto;
+    clear: both;
+}
+
+
+
+/* Header */
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+.site-logo {
+    display: none;   /* döljer det stora lövet tillfälligt för att underlätta */
+}
+
+.my-navbar {
+    padding-top: 10px;
+    list-style-type: none;   /* Tar bort punkterna i listan */
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 2px 10px;
+}
+
+
+
+/* Main */
+
+.outer-wrap-main {
+    min-height: 30em;
+}
+
+.inner-wrap-main {
+    padding: 30px 0;
+}
+
+.inner-wrap-main>.row {
+    display: flex;
+}
+
+.region-main .article {
+    text-align: justify;
+}
+
+.author-byline {
+    border: 1px solid black;
+    width: 650px;
+}
+
+.author-byline img {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Footer */
+
+.inner-wrap-footer {
+    background-color: PeachPuff;
+    padding: 30px 0;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.block.site-footer {
+    margin-top: 30px;
+    text-align: center;
+}

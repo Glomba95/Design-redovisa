@@ -1,0 +1,33 @@
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "asciinema.less";
+@import "codepen.less";
+@import "figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure(@maxWidth);
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+body {
+    max-width: @maxWidth;
+    margin: 8px auto;
+    background-color: #fff;
+}
+
+html {
+    background-color: #eee;
+}
+
+@maxWidth: 800px;

@@ -1,0 +1,27 @@
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "asciinema.less";
+@import "codepen.less";
+@import "figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+
+    // Alternative, send in the max width of the website when all images
+    // are in order in the text. The responsive images begin to act below
+    // this value.
+    //#desinax-figure.figure(1100px);
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
