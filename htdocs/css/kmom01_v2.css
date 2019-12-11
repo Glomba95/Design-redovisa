@@ -76,24 +76,7 @@ body {
   overflow: auto;
   clear: both;
 }
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-  display: none;
-}
 /* Header */
-.region-header-col-1 {
-  float: left;
-  width: 30%;
-  margin-right: 10px;
-}
-.region-header-col-2 {
-  float: left;
-  width: 60%;
-}
 .site-logo {
   display: none;
   /* döljer det stora lövet tillfälligt för att underlätta */
@@ -102,10 +85,6 @@ body {
   padding-top: 10px;
   list-style-type: none;
   /* Tar bort punkterna i listan */
-}
-.my-navbar li {
-  display: inline;
-  padding: 2px 10px;
 }
 /* Main */
 .outer-wrap-main {
@@ -150,6 +129,29 @@ body {
  */
 @media screen and (max-width: 1500px) {
   .site-logo {
+    display: none;
+  }
+}
+/**
+ * Navbar
+ */
+@media screen and (max-width: 980px) {
+  .rm-desktop a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 820px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 710px) {
+  .rm-desktop {
     display: none;
   }
 }
