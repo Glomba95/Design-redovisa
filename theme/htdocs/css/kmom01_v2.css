@@ -76,7 +76,9 @@ body {
   overflow: auto;
   clear: both;
 }
-/* Header */
+/**
+ * Header layout
+ */
 .site-logo {
   display: none;
   /* döljer det stora lövet tillfälligt för att underlätta */
@@ -86,16 +88,40 @@ body {
   list-style-type: none;
   /* Tar bort punkterna i listan */
 }
-/* Main */
+/**
+ * Main and sidebars layout
+ */
 .outer-wrap-main {
   min-height: 38em;
   margin: 15px auto;
+  overflow: auto;
 }
 .inner-wrap-main {
   padding: 30px 0;
 }
 .inner-wrap-main > .row {
   display: flex;
+}
+.region-main {
+  width: 70%;
+  margin-left: 10%;
+  float: left;
+  overflow: auto;
+}
+.region-main.has-sidebar {
+  margin-left: 0;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  width: 30%;
+  float: left;
+}
+.region-has-sidebar-left.has-sidebar-right,
+.region-has-sidebar-right.has-sidebar-left {
+  width: 20%;
 }
 .region-main .article {
   text-align: justify;
@@ -108,7 +134,9 @@ body {
   display: flex;
   flex-direction: row;
 }
-/* Footer */
+/**
+ * Footer
+ */
 .inner-wrap-footer {
   background-color: PeachPuff;
   padding: 30px 0;

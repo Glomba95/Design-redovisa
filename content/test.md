@@ -1,7 +1,7 @@
 ---
 views:
     kursrepo:
-        region: sidebar-right
+        region: sidebar-left
         template: anax/v2/block/default
         data:
             meta:
