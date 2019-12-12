@@ -20,7 +20,7 @@ return [
             "stylesheets" => [
                 // Change here to set another default stylesheet
                 //"css/dbwebb-se.min.css",
-                "css/kmom01.css",
+                "css/kmom02.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -44,7 +44,7 @@ return [
             "template" => "anax/v2/header/site_logo_text",
             "data" => [
                 "homeLink"      => "",
-                "siteLogoText"  => "design",
+                "siteLogoText"  => "Design",
                 "siteLogoTextIcon" => "image/theme/leaf_40x40.png",
                 "siteLogoTextIconAlt" => "Löv-bild",
             ],

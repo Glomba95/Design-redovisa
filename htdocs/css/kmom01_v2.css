@@ -39,13 +39,10 @@
  */
 html {
   overflow-y: scroll;
-  background-color: #424242;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #fff;
   font: 100.01%/1 serif;
 }
 /**
@@ -62,14 +59,17 @@ body {
 /**
  * General layout
  */
+.wrap-all {
+  background-image: url("../../htdocs/img/wpp3.jpg");
+  background-size: cover;
+  background-image: fixed;
+}
 .outer-wrap {
   width: 100%;
   /* så vet vi att de alltid sträcker sig över hela sidan */
 }
 .inner-wrap {
-  max-width: 1100px;
   margin: 0 auto;
-  background-color: #ccc;
 }
 .row::after {
   /* För att cleara headerkolumnerna */
@@ -92,27 +92,31 @@ body {
  * Main and sidebars layout
  */
 .outer-wrap-main {
+  max-width: 1250px;
   min-height: 38em;
   margin: 15px auto;
   overflow: auto;
 }
 .inner-wrap-main {
   padding: 30px 0;
+  background-color: white;
 }
 .inner-wrap-main > .row {
   display: flex;
 }
 .region-main {
   width: 70%;
-  margin-left: 10%;
   float: left;
   overflow: auto;
+  padding: 5%;
 }
 .region-main.has-sidebar {
   margin-left: 0;
+  border-right: 2px solid black;
 }
 .region-main.has-sidebar-left.has-sidebar-right {
   width: 60%;
+  border-left: 2px solid black;
 }
 .region-sidebar-left,
 .region-sidebar-right {
@@ -138,8 +142,9 @@ body {
  * Footer
  */
 .inner-wrap-footer {
-  background-color: PeachPuff;
   padding: 30px 0;
+  color: white;
+  font-size: 22px;
 }
 .footer-column-wrapper {
   display: flex;
@@ -163,22 +168,30 @@ body {
 /**
  * Navbar
  */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1850px) {
+  .rm-desktop a {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .rm-desktop a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
   .rm-desktop a {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
-}
-@media screen and (max-width: 820px) {
   .region-header-col-1,
   .region-header-col-3 {
-    width: 15%;
+    width: 10%;
   }
   .region-header-col-2 {
-    width: 70%;
+    width: 80%;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 800px) {
   .rm-desktop {
     display: none;
   }

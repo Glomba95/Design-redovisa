@@ -12,14 +12,18 @@
  * General layout
  */
 
- .outer-wrap {
-     width: 100%;   /* så vet vi att de alltid sträcker sig över hela sidan */
+.wrap-all {
+    background-image: url("../../htdocs/img/wpp3.jpg");
+    background-size: cover;
+    background-image: fixed;
+}
+
+.outer-wrap {
+    width: 100%;   /* så vet vi att de alltid sträcker sig över hela sidan */
  }
 
 .inner-wrap {
-    max-width: 1100px;
     margin: 0 auto;
-    background-color: #ccc;
 }
 
 .row::after {      /* För att cleara headerkolumnerna */
@@ -46,45 +50,49 @@
 /**
  * Main and sidebars layout
  */
- .outer-wrap-main {
-     min-height: 38em;
-     margin: 15px auto;
-     overflow: auto;
- }
+.outer-wrap-main {
+    max-width: 1250px;
+    min-height: 38em;
+    margin: 15px auto;
+    overflow: auto;
+}
 
- .inner-wrap-main {
-     padding: 30px 0;
- }
+.inner-wrap-main {
+    padding: 30px 0;
+    background-color: white;
+}
 
- .inner-wrap-main>.row {
-     display: flex;
- }
+.inner-wrap-main>.row {
+    display: flex;
+}
 
- .region-main {
-     width: 70%;
-     margin-left: 10%;
-     float: left;
-     overflow: auto;
+.region-main {
+    width: 70%;
+    float: left;
+    overflow: auto;
+    padding: 5%;
 
-     &.has-sidebar {
-         margin-left: 0;
-     }
+    &.has-sidebar {
+        margin-left: 0;
+        border-right: 2px solid black;
+    }
 
-     &.has-sidebar-left.has-sidebar-right {
-         width: 60%;
-     }
- }
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+        border-left: 2px solid black;
+    }
+}
 
- .region-sidebar-left,
- .region-sidebar-right {
-     width: 30%;
-     float: left;
- }
+.region-sidebar-left,
+.region-sidebar-right {
+    width: 30%;
+    float: left;
+}
 
- .region-has-sidebar-left.has-sidebar-right,
- .region-has-sidebar-right.has-sidebar-left {
-     width: 20%;
- }
+.region-has-sidebar-left.has-sidebar-right,
+.region-has-sidebar-right.has-sidebar-left {
+    width: 20%;
+}
 
 .region-main .article {
     text-align: justify;
@@ -106,8 +114,9 @@
  */
 
 .inner-wrap-footer {
-    background-color: PeachPuff;
     padding: 30px 0;
+    color: white;
+    font-size: 22px;
 }
 
 .footer-column-wrapper {
