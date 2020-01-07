@@ -21,8 +21,6 @@ Test
 
 En paragraf i markdown
 
--------------------
-
 ### Header 3
 
 - Grej 1

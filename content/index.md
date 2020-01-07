@@ -11,7 +11,7 @@ views:
                 type: single
                 route: block/byline
 ---
-Min me-sida i kursen design
+Min me-sida<br>i kursen Design
 =========================
 
 [FIGURE src="image/adaIMG.gif?w=500" class="right"]

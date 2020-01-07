@@ -14,13 +14,13 @@ return [
         "data" => [
             "baseTitle" => " | design",
             "bodyClass" => null,
-            "favicon" => "favicon.ico",
+            "favicon" => "sunflower.png",
             "htmlClass" => null,
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
                 //"css/dbwebb-se.min.css",
-                "css/kmom02.min.css",
+                "css/kmom03.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
